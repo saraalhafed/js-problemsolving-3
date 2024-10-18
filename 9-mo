@@ -1,0 +1,14 @@
+function NonrepeatingCharacter(str) {
+    //skip the space 
+    if(char=== " ") continue;
+  for (char of str) {
+    if (str.indexOf(char) === str.lastIndexOf(char)) {
+      return char;
+    }
+  }
+  // Your code here
+}
+
+console.log(NonrepeatingCharacter("abcdef")); // Expected Output: "a"
+console.log(NonrepeatingCharacter("hello world hi hey")); // Expected Output: "w"
+console.log(NonrepeatingCharacter("agettkgaeee")); //k
